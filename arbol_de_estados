@@ -1,0 +1,31 @@
+digraph {
+	A [color=green]
+	"A=0" [color=black]
+	"B0 = 0" [color=black]
+	"C0 = 0 (Salida=0)" [color=black]
+	"C0 = 1 (Salida=0)" [color=black]
+	"B0 = 1" [color=black]
+	"C1 = 0 (Salida=0)" [color=black]
+	"C1 = 1 (Salida=0)" [color=black]
+	"A=1" [color=black]
+	"B1 = 0" [color=black]
+	"C2 = 0 (Salida=0)" [color=green]
+	"C2 = 1 (Salida=0)" [color=black]
+	"B1 = 1" [color=green]
+	"C3 = 0 (Salida=0)" [color=black]
+	"C3 = 1 (Salida=1)" [color=red]
+	A -> "A=0"
+	"A=0" -> "B0 = 0"
+	"B0 = 0" -> "C0 = 0 (Salida=0)"
+	"B0 = 0" -> "C0 = 1 (Salida=0)"
+	"A=0" -> "B0 = 1"
+	"B0 = 1" -> "C1 = 0 (Salida=0)"
+	"B0 = 1" -> "C1 = 1 (Salida=0)"
+	A -> "A=1"
+	"A=1" -> "B1 = 0"
+	"B1 = 0" -> "C2 = 0 (Salida=0)"
+	"B1 = 0" -> "C2 = 1 (Salida=0)"
+	"A=1" -> "B1 = 1"
+	"B1 = 1" -> "C3 = 0 (Salida=0)"
+	"B1 = 1" -> "C3 = 1 (Salida=1)"
+}
