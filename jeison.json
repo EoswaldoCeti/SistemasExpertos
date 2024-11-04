@@ -1,0 +1,40 @@
+[
+    {
+        "enunciado": "es blanco o negro",
+        "variables": {
+            "P1": "es blanco",
+            "P2": "negro"
+        },
+        "formula": "P1\u2228P2",
+        "tabla": [
+            {
+                "P1": false,
+                "P2": false,
+                "Resultado": false
+            },
+            {
+                "P1": false,
+                "P2": true,
+                "Resultado": true
+            },
+            {
+                "P1": true,
+                "P2": false,
+                "Resultado": true
+            },
+            {
+                "P1": true,
+                "P2": true,
+                "Resultado": true
+            }
+        ],
+        "tabla_estados": {
+            "P2": {
+                "Valor": true
+            },
+            "P1": {
+                "Valor": true
+            }
+        }
+    }
+]
